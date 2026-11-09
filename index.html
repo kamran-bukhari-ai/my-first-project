@@ -4,55 +4,59 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Syed Kamran Bukhari</title>
 <style>
-body{margin:0;font-family:Arial;background:#0f0f1a;color:white;text-align:center;padding-bottom:40px}
-.header{padding:35px 20px 25px;background:linear-gradient(135deg,#ff0055,#6a00ff,#00c6ff)}
-.avatar{width:130px;height:130px;border-radius:50%;background:linear-gradient(135deg,#fff,#ffd700);color:#6a00ff;font-size:55px;font-weight:bold;display:flex;align-items:center;justify-content:center;margin:0 auto;border:5px solid white;box-shadow:0 0 25px rgba(0,0,0,0.5)}
-.header h1{margin:15px 0 5px;font-size:32px}
-.bio{background:rgba(0,0,0,0.25);padding:15px;border-radius:15px;margin:15px 5px;font-size:15px;line-height:1.6}
-.contact{display:flex;justify-content:center;gap:15px;margin-top:15px}
-.contact a{background:white;color:black;padding:10px 18px;border-radius:50px;text-decoration:none;font-weight:bold;font-size:15px;display:flex;align-items:center;gap:6px}
-.section{background:#1a1a2e;margin:15px;border-radius:20px;padding:20px}
-.btn{display:block;padding:16px;margin:12px 0;border-radius:50px;color:white;text-decoration:none;font-weight:bold;font-size:18px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial;background:#000;color:white;text-align:center}
+.top{background:linear-gradient(180deg,#ff0055,#6a00ff,#000);padding:50px 15px 30px}
+.logo{width:150px;height:150px;border-radius:50%;background:white;color:#ff0055;font-size:65px;font-weight:900;display:flex;align-items:center;justify-content:center;margin:0 auto;border:6px solid #ffd700;box-shadow:0 0 40px #ffd700}
+.top h1{font-size:42px;margin-top:18px;text-shadow:0 3px 10px #000}
+.bio{font-size:19px;line-height:1.7;margin:18px 10px;background:rgba(255,255,255,0.15);padding:18px;border-radius:20px}
+.contact-row{display:flex;gap:10px;justify-content:center;margin-top:18px;flex-wrap:wrap}
+.pill{background:white;color:black;padding:13px 20px;border-radius:100px;font-weight:bold;font-size:17px;display:flex;align-items:center;gap:8px;text-decoration:none}
+.pill img{width:24px;height:24px}
+.big{padding:25px 12px}
+.big h2{font-size:28px;margin-bottom:20px}
+.btn{width:100%;display:flex;align-items:center;justify-content:center;gap:12px;padding:22px;margin:15px 0;border-radius:100px;color:white;text-decoration:none;font-weight:900;font-size:22px;box-shadow:0 5px 20px rgba(0,0,0,0.5)}
+.btn img{width:35px;height:35px;background:white;border-radius:50%;padding:4px}
 .btn-green{background:#25D366}
 .btn-red{background:#FF0000}
-.btn-black{background:#000;border:1px solid #555}
-input,textarea{width:90%;padding:13px;margin:8px 0;border-radius:12px;border:none}
-.send{padding:13px 30px;border:none;border-radius:50px;background:#ff0055;color:white;font-weight:bold;font-size:16px}
+.btn-tiktok{background:#fff;color:#000}
+input,textarea{width:100%;padding:18px;margin:10px 0;border-radius:15px;border:none;font-size:18px}
+.send{width:100%;padding:18px;border:none;border-radius:100px;background:#ff0055;color:white;font-weight:900;font-size:20px}
+.footer{padding:30px;background:#111;font-size:18px;line-height:1.6}
 </style>
 </head>
 <body>
 
-<div class="header">
-<div class="avatar">KB</div>
+<div class="top">
+<div class="logo">KB</div>
 <h1>Kamran Bukhari</h1>
 <div class="bio">
 My name is Syed Kamran Bukhari. I am social media influencer. I am from Lodhran city
 </div>
-
-<div class="contact">
-<a href="https://wa.me/923494698377">📱 +923494698377</a>
-<a href="https://www.tiktok.com/@lodhran_boy">🎵 @lodhran_boy</a>
+<div class="contact-row">
+<a class="pill" href="https://wa.me/923494698377"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"> +923494698377</a>
+<a class="pill" href="https://www.tiktok.com/@lodhran_boy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_logo.svg"> @lodhran_boy</a>
 </div>
 </div>
 
-<div class="section">
-<h2>Mujhse Baat Karo!</h2>
+<div class="big">
+<h2>Mujhse Baat Karo! 👇</h2>
 <input type="text" placeholder="Apna Naam Likho">
 <input type="text" placeholder="Apna Number">
-<textarea placeholder="Apna Message Likho..."></textarea><br>
+<textarea placeholder="Apna Message Likho..."></textarea>
 <button class="send">Message Bhejo</button>
 </div>
 
-<div class="section">
-<a class="btn btn-green" href="https://wa.me/923494698377">💬 WhatsApp Pe Baat Karo</a>
-<a class="btn btn-red" href="https://www.youtube.com/@Gaming_with_kamran">▶️ YouTube Dekho</a>
-<a class="btn btn-black" href="https://www.tiktok.com/@lodhran_boy">🎵 TikTok Dekho</a>
+<div class="big">
+<a class="btn btn-green" href="https://wa.me/923494698377"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"> WhatsApp Pe Baat Karo</a>
+<a class="btn btn-red" href="https://www.youtube.com/@Gaming_with_kamran"><img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg"> YouTube Dekho</a>
+<a class="btn btn-tiktok" href="https://www.tiktok.com/@lodhran_boy"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Tiktok_logo.svg"> TikTok Dekho</a>
 </div>
 
-<div class="section">
+<div class="footer">
 <h2>Follow Karo! ❤️</h2>
 <p>Roz nayi video ke liye Follow karo</p>
-<p>🎵 @lodhran_boy</p>
+<p style="font-size:24px;font-weight:bold;margin-top:10px">🎵 @lodhran_boy</p>
 </div>
 
 </body>
