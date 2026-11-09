@@ -13,7 +13,7 @@ body{font-family:Arial;background:#000;color:white;text-align:center}
 .contact-row{display:flex;gap:10px;justify-content:center;margin-top:18px;flex-wrap:wrap}
 .pill{background:white;color:black;padding:13px 20px;border-radius:100px;font-weight:bold;font-size:17px;display:flex;align-items:center;gap:8px;text-decoration:none}
 .pill img{width:26px;height:26px;object-fit:contain}
-.card{background:#1a1a2e;margin:15px;border-radius:20px;padding:22px;text-align:left}
+.card{background:#1a1a2e;margin:15px;border-radius:20px;padding:22px 22px 22px 30px;text-align:left;overflow:hidden}
 .card h2{font-size:26px;text-align:center;margin-bottom:15px;color:#ffd700}
 .card p{font-size:18px;line-height:1.8;margin:8px 0}
 .big{padding:10px 12px}
@@ -24,7 +24,7 @@ body{font-family:Arial;background:#000;color:white;text-align:center}
 .btn-tiktok{background:#fff;color:#000}
 .btn-blue{background:#1877F2}
 input,textarea{width:100%;padding:18px;margin:10px 0;border-radius:15px;border:none;font-size:18px}
-.send{width:100%;padding:18px;border:none;border-radius:100px;background:#ff0055;color:white;font-weight:900;font-size:20px}
+.send{width:100%;padding:18px;border:none;border-radius:100px;background:#ff0055;color:white;font-weight:900;font-size:20px;cursor:pointer}
 .footer{padding:30px;background:#111;font-size:18px;line-height:1.6}
 </style>
 </head>
@@ -52,10 +52,10 @@ input,textarea{width:100%;padding:18px;margin:10px 0;border-radius:15px;border:n
 </div>
 <div class="big">
 <h2 style="font-size:28px;margin:15px">Mujhse Baat Karo! 👇</h2>
-<input type="text" placeholder="Apna Naam Likho">
-<input type="text" placeholder="Apna Number">
-<textarea placeholder="Apna Message Likho..."></textarea>
-<button class="send">Message Bhejo</button>
+<input id="naam" type="text" placeholder="Apna Naam Likho">
+<input id="number" type="text" placeholder="Apna Number">
+<textarea id="msg" placeholder="Apna Message Likho..."></textarea>
+<button class="send" onclick="sendMsg()">Message Bhejo</button>
 </div>
 <div class="big">
 <a class="btn btn-green" href="https://wa.me/923494698377"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"> WhatsApp Pe Baat Karo</a>
@@ -69,5 +69,15 @@ input,textarea{width:100%;padding:18px;margin:10px 0;border-radius:15px;border:n
 <p style="font-size:24px;font-weight:bold;margin-top:10px">@lodhran_boy</p>
 <p style="margin-top:10px">Lodhran Boy - IUB AI Student</p>
 </div>
+<script>
+function sendMsg(){
+var n=document.getElementById('naam').value;
+var p=document.getElementById('number').value;
+var m=document.getElementById('msg').value;
+if(n==''||m==''){alert('Please Naam aur Message likho!');return;}
+var text="Assalam-o-Alaikum Kamran!%0A%0AName: "+n+"%0ANumber: "+p+"%0AMessage: "+m;
+window.open("https://wa.me/923494698377?text="+text,"_blank");
+}
+</script>
 </body>
 </html>
